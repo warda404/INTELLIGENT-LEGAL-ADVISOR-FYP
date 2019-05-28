@@ -1,0 +1,197 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lawyers</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+
+    <!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static "law_site/NEW/vendor/bootstrap/css/bootstrap.min.css" %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static "law_site/NEW/fonts/font-awesome-4.7.0/css/font-awesome.min.css"%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static "law_site/NEW/vendor/animate/animate.css"%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static "law_site/NEW/vendor/select2/select2.min.css"%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static "law_site/NEW/vendor/perfect-scrollbar/perfect-scrollbar.css"%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static "law_site/NEW/css/util.css"%}">
+	<link rel="stylesheet" type="text/css" href="{% static "law_site/NEW/css/main.css"%}">
+<!--===============================================================================================-->
+
+
+
+    <link rel="stylesheet" href="{% static "law_site/css/open-iconic-bootstrap.min.css" %}">
+    <link rel="stylesheet" href="{% static "law_site/css/animate.css" %}">
+
+    <link rel="stylesheet" href="{% static "law_site/css/owl.carousel.min.css"%}">
+    <link rel="stylesheet" href="{% static "law_site/css/owl.theme.default.min.css"%}">
+    <link rel="stylesheet" href="{% static "law_site/css/magnific-popup.css"%}">
+
+    <link rel="stylesheet" href="{% static "law_site/css/aos.css"%}">
+
+    <link rel="stylesheet" href="{% static "law_site/css/ionicons.min.css"%}">
+
+    <link rel="stylesheet" href="{% static "law_site/css/bootstrap-datepicker.css"%}">
+    <link rel="stylesheet" href="{% static "law_site/css/jquery.timepicker.css"%}">
+
+
+    <link rel="stylesheet" href="{% static "law_site/css/flaticon.css"%}">
+    <link rel="stylesheet" href="{% static "law_site/css/icomoon.css"%}">
+    <link rel="stylesheet" href="{% static "law_site/css/style.css"%}">
+  </head>
+  <body>
+
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="/">Intelligent Legal Advisor</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('{% static "law_site/images/bg_2.jpg"%}')"; data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-end justify-content-center">
+          <div class="col-md-9 ftco-animate pb-5 text-center">
+            <h1 class="mb-3 bread">Lawyers</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="/">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Lawyers <i class="ion-ios-arrow-forward"></i></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+      <div class="table100 ver3 m-b-110">
+					<div class="table100-head">
+						<table>
+							<thead>
+								<tr class="row100 head">
+									<th class="cell100 column1">Name</th>
+									<th class="cell100 column2">Address</th>
+									<th class="cell100 column3">Contact</th>
+									<th class="cell100 column4">Email/Website</th>
+									<th class="cell100 column5">Expertise</th>
+                  <!-- <th colspan="1",class="cell100 column5">City</th> -->
+								</tr>
+							</thead>
+						</table>
+					</div>
+
+					<div class="table100-body js-pscroll">
+						<table>
+							<tbody>
+                {% for name, address, contact, email, category, city in lawyers%}
+								<tr class="row100 body">
+									<td class="cell100 column1">{{name}}</td>
+									<td class="cell100 column2">{{address}}</td>
+									<td class="cell100 column3">{{contact}}</td>
+									<td class="cell100 column4"><a href={{email}}>{{email}}</a></td>
+									<td class="cell100 column5">{{category}}</td>
+                  <!-- <td colspan="1",class="cell100 column6">{{city}}</td> -->
+								</tr>
+                {% endfor %}
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Intelligent Legal Advisor</h2>
+              <!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
+            </div>
+          </div>
+
+
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Contact</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">College of EME</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="{% static "law_site/js/jquery.min.js" %}"></script>
+  <script src="{% static "law_site/js/jquery-migrate-3.0.1.min.js"%}"></script>
+  <script src="{% static "law_site/js/popper.min.js"%}"></script>
+  <script src="{% static "law_site/js/bootstrap.min.js"%}"></script>
+  <script src="{% static "law_site/js/jquery.easing.1.3.js"%}"></script>
+  <script src="{% static "law_site/js/jquery.waypoints.min.js"%}"></script>
+  <script src="{% static "law_site/js/jquery.stellar.min.js"%}"></script>
+  <script src="{% static "law_site/js/owl.carousel.min.js"%}"></script>
+  <script src="{% static "law_site/js/jquery.magnific-popup.min.js"%}"></script>
+  <script src="{% static "law_site/js/aos.js"%}"></script>
+  <script src="{% static "law_site/js/jquery.animateNumber.min.js"%}"></script>
+  <script src="{% static "law_site/js/bootstrap-datepicker.js"%}"></script>
+  <script src="{% static "law_site/js/jquery.timepicker.min.js"%}"></script>
+  <script src="{% static "law_site/js/scrollax.min.js"%}"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="{% static "law_site/js/google-map.js"%}"></script>
+  <script src="{% static "law_site/js/main.js"%}"></script>
+
+
+  <!--===============================================================================================-->
+	<script src="{% static "law_site/NEW/vendor/jquery/jquery-3.2.1.min.js"%}"></script>
+<!--===============================================================================================-->
+	<script src="{% static "law_site/NEW/vendor/bootstrap/js/popper.js"%}"></script>
+	<script src="{% static "law_site/NEW/vendor/bootstrap/js/bootstrap.min.js"%}"></script>
+<!--===============================================================================================-->
+	<script src="{% static "law_site/NEW/vendor/select2/select2.min.js"%}"></script>
+<!--===============================================================================================-->
+	<script src="{% static "law_site/NEW/vendor/perfect-scrollbar/perfect-scrollbar.min.js"%}"></script>
+	<script>
+		$('.js-pscroll').each(function(){
+			var ps = new PerfectScrollbar(this);
+
+			$(window).on('resize', function(){
+				ps.update();
+			})
+		});
+
+
+	</script>
+<!--===============================================================================================-->
+	<script src="{% static "law_site/NEW/js/main.js" %}"></script>
+
+  </body>
+</html>

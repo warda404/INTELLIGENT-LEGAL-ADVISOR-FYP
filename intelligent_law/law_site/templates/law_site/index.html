@@ -1,0 +1,334 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Intelligent Legal Advisor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static "law_site/css/open-iconic-bootstrap.min.css" %}">
+    <link rel="stylesheet" href="{% static "law_site/css/animate.css" %}">
+
+    <link rel="stylesheet" href="{% static "law_site/css/owl.carousel.min.css" %}">
+    <link rel="stylesheet" href="{% static "law_site/css/owl.theme.default.min.css" %}">
+    <link rel="stylesheet" href="{% static "law_site/css/magnific-popup.css" %}">
+
+    <link rel="stylesheet" href="{% static "law_site/css/aos.css" %}">
+
+    <link rel="stylesheet" href="{% static "law_site/css/ionicons.min.css" %}">
+
+    <link rel="stylesheet" href="{% static "law_site/css/bootstrap-datepicker.css" %}">
+    <link rel="stylesheet" href="{% static "law_site/css/jquery.timepicker.css" %}">
+
+
+    <link rel="stylesheet" href="{% static "law_site/css/flaticon.css" %}">
+    <link rel="stylesheet" href="{% static "law_site/css/icomoon.css" %}">
+    <link rel="stylesheet" href="{% static "law_site/css/style.css" %}">
+  </head>
+  <body>
+
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="">Intelligent Legal Advisor</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item active"><a href="" class="nav-link">Home</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+
+    <div class="hero-wrap js-fullheight" style="background-image: url('{% static "law_site/images/bg_1.jpg"%}')"; data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="col-md-10 text-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+          	<h2 class="subheading" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">We are here to help!</h2>
+            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+            	<span>Experience</span> . <span>Innovation</span> . <span>Excellence</span>
+            </h1>
+            <p><a href="login" class="btn btn-primary py-3 px-4">Log in as lawyer</a></p>
+            <p><a href="login" class="btn btn-primary py-3 px-4">Continue as guest</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="ftco-section ftco-no-pb services-section">
+      <div class="container">
+        <div class="row no-gutters d-flex">
+          <div class="col-md-3 text-center services align-self-stretch ftco-animate p-4">
+            <div class="icon"><span class="flaticon-auction"></span></div>
+            <div class="media-body">
+              <h3 class="heading mb-3"><a href="verdict">Predict your case verdict</a></h3>
+              <p>Our intelligent system will tell you how likely your case is to be violated or not.</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center services align-self-stretch ftco-animate p-4">
+            <div class="icon"><span class="flaticon-lawyer"></span></div>
+            <div class="media-body">
+              <h3 class="heading mb-3"><a href="case_to_section">Get legal advice from our bot</a></h3>
+              <p>Tell us what your problem is, we will tell you what steps to follow</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center services align-self-stretch ftco-animate p-4">
+            <div class="icon"><span class="flaticon-money"></span></div>
+            <div class="media-body">
+              <h3 class="heading mb-3"><a href="summarize">Summarize your petitions</a></h3>
+              <!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p> -->
+            </div>
+          </div>
+          <div class="col-md-3 text-center services align-self-stretch ftco-animate p-4">
+            <div class="icon"><span class="ion-ios-help-circle-outline"></span></div>
+            <div class="media-body">
+              <h3 class="heading mb-3"><a href="document_similarity">Get document similarity</a></h3>
+              <p>Find past court orders similar to your case</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section bg-light">
+    	<div class="container">
+    		<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+          	<span class="subheading">Find your Lawyer</span>
+            <h2 class="mb-4">Choose expertise</h2>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+        	<div class="col-md-3 col-lg-2 text-center">
+        		<div class="practice-area ftco-animate">
+        			<div class="icon d-flex justify-content-center align-items-center">
+        				<span class="flaticon-family"></span>
+        			</div>
+        			<h3><a href="#">Family Law</a></h3>
+        		</div>
+        	</div>
+        	<div class="col-md-3 col-lg-2 text-center">
+        		<div class="practice-area ftco-animate">
+        			<div class="icon d-flex justify-content-center align-items-center">
+        				<span class="flaticon-auction"></span>
+        			</div>
+        			<h3><a href="#">Business Law</a></h3>
+        		</div>
+        	</div>
+        	<div class="col-md-3 col-lg-2 text-center">
+        		<div class="practice-area ftco-animate">
+        			<div class="icon d-flex justify-content-center align-items-center">
+        				<span class="flaticon-shield"></span>
+        			</div>
+        			<h3><a href="#">Insurance Law</a></h3>
+        		</div>
+        	</div>
+        	<div class="col-md-3 col-lg-2 text-center">
+        		<div class="practice-area ftco-animate">
+        			<div class="icon d-flex justify-content-center align-items-center">
+        				<span class="flaticon-handcuffs"></span>
+        			</div>
+        			<h3><a href="#">Criminal Law</a></h3>
+        		</div>
+        	</div>
+        	<div class="col-md-3 col-lg-2 text-center">
+        		<div class="practice-area ftco-animate">
+        			<div class="icon d-flex justify-content-center align-items-center">
+        				<span class="flaticon-house"></span>
+        			</div>
+        			<h3><a href="#">Property Law</a></h3>
+        		</div>
+        	</div>
+        	<div class="col-md-3 col-lg-2 text-center">
+        		<div class="practice-area ftco-animate">
+        			<div class="icon d-flex justify-content-center align-items-center">
+        				<span class="flaticon-employee"></span>
+        			</div>
+        			<h3><a href="#">Employment Law</a></h3>
+        		</div>
+        	</div>
+        	<div class="col-md-3 col-lg-2 text-center">
+        		<div class="practice-area ftco-animate">
+        			<div class="icon d-flex justify-content-center align-items-center">
+        				<span class="flaticon-fire"></span>
+        			</div>
+        			<h3><a href="#">Fire Accident</a></h3>
+        		</div>
+        	</div>
+        	<div class="col-md-3 col-lg-2 text-center">
+        		<div class="practice-area ftco-animate">
+        			<div class="icon d-flex justify-content-center align-items-center">
+        				<span class="flaticon-money"></span>
+        			</div>
+        			<h3><a href="#">Financial Law</a></h3>
+        		</div>
+        	</div>
+        	<div class="col-md-3 col-lg-2 text-center">
+        		<div class="practice-area ftco-animate">
+        			<div class="icon d-flex justify-content-center align-items-center">
+        				<span class="flaticon-medicine"></span>
+        			</div>
+        			<h3><a href="#">Drug Offenses</a></h3>
+        		</div>
+        	</div>
+        	<div class="col-md-3 col-lg-2 text-center">
+        		<div class="practice-area ftco-animate">
+        			<div class="icon d-flex justify-content-center align-items-center">
+        				<span class="flaticon-handcuffs"></span>
+        			</div>
+        			<h3><a href="#">Sexual Offenses</a></h3>
+        		</div>
+        	</div>
+        </div>
+    	</div>
+    </section>
+
+
+    <section class="ftco-consultation">
+        	<div class="container-fluid">
+        		<div class="row d-md-flex">
+        			<div class="half d-flex justify-content-center align-items-center img" style="background-image: url('{% static "law_site/images/bg_1.jpg"%}')">
+        				<div class="overlay"></div>
+        				<div class="desc text-center">
+        					<div class="icon"><span class="flaticon-employee"></span></div>
+        					<h1><a href="index.html">Find Lawyer<br><span>Intelligent Legal Advisor</span></a></h1>
+        				</div>
+        			</div>
+        			<div class="half p-3 p-md-5 ftco-animate">
+        				<h3 class="mb-4">Find Lawyer</h3>
+        				<form method = "GET" action="lawyer_data">
+                  {% csrf_token %}
+                  {{ form.as_p }}
+    	            <div class="form-group">
+                    <select id = "idcity" name = "city">
+                      <option value="" selected="selected">Please select city</option>
+                      <option value="lahore">Lahore</option>
+                      <option value="islamabad">Islamabad</option>
+                      <option value="rawalpindi/islamabad">Rawalpindi/Islamabad</option>
+                      <option value="karachi">Karachi</option>
+                      <option value="peshawar">Peshawar</option>
+                      <option value="multan">Multan</option>
+                      <option value="faisalabad">Faisalabad</option>
+                      <option value="quetta">Quetta</option>
+                    </select>
+    	            </div>
+    	            <div class="form-group">
+                    <select id = "idcategory" name = "category">
+                      <option value="" selected="selected">Please select expertise</option>
+                      <option value="civil">Civil</option>
+                      <option value="criminal">Criminal</option>
+                      <option value="marriage">Marriage</option>
+                      <option value="divorce">Divorce</option>
+                      <option value="business">Business</option>
+                      <option value="family">Family</option>
+                      <option value="commercial">Commercial</option>
+                      <option value="corporat">Corporate</option>
+                      <option value="company">Company</option>
+                      <option value="income tax">Income Tax</option>
+                      <option value="intellectual">Intellectual Property</option>
+                      <option value="information technology">Information Technology</option>
+                      <option value="cyber">Cyber Law</option>
+                      <option value="defamation">Defamation</option>
+                      <option value="constitutional">Constitutional Law</option>
+                      <option value="firm registration">Firm registration</option>
+                      <option value="sales tax">Sales Tax</option>
+                      <option value="immigration">Immigration</option>
+                      <option value="trade%mark">Trade mark</option>
+                      <option value="banking">Banking</option>
+                      <option value="financ">Finance</option>
+                      <option value="investment">Investment</option>
+                      <option value="patent">Patents</option>
+                      <option value="copy%right">Copyrights</option>
+                      <option value="international finance">International Finance</option>
+                      <option value="WTO">World Trade Organization (WTO)</option>
+                      <option value="securit">Security</option>
+                      <option value="privat">Privatization</option>
+                      <option value="theft">Theft</option>
+                      <option value="fraud">Fraud</option>
+                      <option value="embezzlement">Embezzlement</option>
+                      <option value="contract">Contracts</option>
+                      <option value="labour">Labour</option>
+                      <option value="custom">Customs</option>
+                      <option value="bankrupt">Bankruptcy</option>
+                      <option value="employ">Employment</option>
+                      <option value="tax">Tax</option>
+                      <option value="property">Property</option>
+                      <option value="service">Services Laws</option>
+                    </select>
+    	            </div>
+    	            <div class="form-group">
+    	              <input type="submit" value="Search" class="btn btn-primary">
+    	            </div>
+    	          </form>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+
+
+
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Intelligent Legal Advisor</h2>
+              <!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Contact</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">College of EME</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="{% static "law_site/js/jquery.min.js" %}"></script>
+  <script src="{% static "law_site/js/jquery-migrate-3.0.1.min.js" %}"></script>
+  <script src="{% static "law_site/js/popper.min.js" %}"></script>
+  <script src="{% static "law_site/js/bootstrap.min.js" %}" ></script>
+  <script src="{% static "law_site/js/jquery.easing.1.3.js" %}"></script>
+  <script src="{% static "law_site/js/jquery.waypoints.min.js" %}" ></script>
+  <script src="{% static "law_site/js/jquery.stellar.min.js" %}" ></script>
+  <script src="{% static "law_site/js/owl.carousel.min.js" %}" ></script>
+  <script src="{% static "law_site/js/jquery.magnific-popup.min.js" %}" ></script>
+  <script src="{% static "law_site/js/aos.js" %}" ></script>
+  <script src="{% static "law_site/js/jquery.animateNumber.min.js" %}" ></script>
+  <script src="{% static "law_site/js/bootstrap-datepicker.js" %}" ></script>
+  <script src="{% static "law_site/js/jquery.timepicker.min.js" %}" ></script>
+  <script src="{% static "law_site/js/scrollax.min.js" %}" ></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="{% static "law_site/js/google-map.js" %}" ></script>
+  <script src="{% static "law_site/js/main.js" %}" ></script>
+
+  </body>
+</html>

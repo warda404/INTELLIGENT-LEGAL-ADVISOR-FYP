@@ -1,0 +1,122 @@
+{
+    "all": {
+        "prevalence": {
+            "5": {
+                "violation": 220,
+                "no-violation": 35,
+                "class_normalized": 0.8627450980392157,
+                "no-violation_normalized": 0.015027908973808502,
+                "violation_normalized": 0.094461142121082
+            },
+            "2": {
+                "violation": 115,
+                "no-violation": 23,
+                "class_normalized": 0.8333333333333334,
+                "no-violation_normalized": 0.0098754830399313,
+                "violation_normalized": 0.04937741519965651
+            },
+            "p1": {
+                "violation": 13,
+                "no-violation": 5,
+                "class_normalized": 0.7222222222222222,
+                "no-violation_normalized": 0.0021468441391155,
+                "violation_normalized": 0.0055817947617003
+            },
+            "34": {
+                "violation": 10,
+                "no-violation": 2,
+                "class_normalized": 0.8333333333333334,
+                "no-violation_normalized": 0.0008587376556462001,
+                "violation_normalized": 0.004293688278231
+            },
+            "6": {
+                "violation": 771,
+                "no-violation": 87,
+                "class_normalized": 0.8986013986013986,
+                "no-violation_normalized": 0.0373550880206097,
+                "violation_normalized": 0.3310433662516101
+            },
+            "38": {
+                "violation": 4,
+                "no-violation": 1,
+                "class_normalized": 0.8,
+                "no-violation_normalized": 0.00042936882782310007,
+                "violation_normalized": 0.0017174753112924003
+            },
+            "7": {
+                "violation": 4,
+                "no-violation": 6,
+                "class_normalized": 0.4,
+                "no-violation_normalized": 0.0025762129669386004,
+                "violation_normalized": 0.0017174753112924003
+            },
+            "4": {
+                "violation": 8,
+                "no-violation": 3,
+                "class_normalized": 0.7272727272727273,
+                "no-violation_normalized": 0.0012881064834693002,
+                "violation_normalized": 0.0034349506225848005
+            },
+            "12": {
+                "violation": 1,
+                "no-violation": 0,
+                "class_normalized": 1.0,
+                "no-violation_normalized": 0.0,
+                "violation_normalized": 0.00042936882782310007
+            },
+            "13": {
+                "violation": 17,
+                "no-violation": 0,
+                "class_normalized": 1.0,
+                "no-violation_normalized": 0.0,
+                "violation_normalized": 0.0072992700729927005
+            },
+            "3": {
+                "violation": 425,
+                "no-violation": 56,
+                "class_normalized": 0.8835758835758836,
+                "no-violation_normalized": 0.024044654358093602,
+                "violation_normalized": 0.18248175182481752
+            },
+            "9": {
+                "violation": 9,
+                "no-violation": 4,
+                "class_normalized": 0.6923076923076923,
+                "no-violation_normalized": 0.0017174753112924003,
+                "violation_normalized": 0.0038643194504079004
+            },
+            "10": {
+                "violation": 95,
+                "no-violation": 29,
+                "class_normalized": 0.7661290322580645,
+                "no-violation_normalized": 0.0124516960068699,
+                "violation_normalized": 0.040790038643194505
+            },
+            "1": {
+                "violation": 119,
+                "no-violation": 22,
+                "class_normalized": 0.8439716312056738,
+                "no-violation_normalized": 0.009446114212108201,
+                "violation_normalized": 0.051094890510948905
+            },
+            "8": {
+                "violation": 146,
+                "no-violation": 57,
+                "class_normalized": 0.7192118226600985,
+                "no-violation_normalized": 0.024474023185916703,
+                "violation_normalized": 0.0626878488621726
+            },
+            "11": {
+                "violation": 38,
+                "no-violation": 4,
+                "class_normalized": 0.9047619047619048,
+                "no-violation_normalized": 0.0017174753112924003,
+                "violation_normalized": 0.016316015457277802
+            }
+        },
+        "dataset_size": 2329,
+        "min_feature": 163,
+        "avg_feature": 1180.3194504079004,
+        "max_feature": 3706
+    }
+}
