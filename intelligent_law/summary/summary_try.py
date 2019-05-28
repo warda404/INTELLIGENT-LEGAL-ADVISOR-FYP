@@ -100,14 +100,14 @@ def readDoc(file_name):
     # Case 1: if it is a .txt file
 
     if choice == 1:
-        file_path = '/Users/warda/Dropbox/INTELLIGENT LEGAL ADVISOR FYP/intelligent_law/media/' + file_name
+        file_path = '/Users/warda/Desktop/INTELLIGENT LEGAL ADVISOR FYP/intelligent_law/media/' + file_name
         user_file = open(file_path, 'r', errors='ignore')
         document = user_file.read()
         user_file.close()
 
     # Case 2: if it is a .pdf file
     elif choice == 2:
-        file_path = '/Users/warda/Dropbox/INTELLIGENT LEGAL ADVISOR FYP/intelligent_law/media/' + file_name
+        file_path = '/Users/warda/Desktop/INTELLIGENT LEGAL ADVISOR FYP/intelligent_law/media/' + file_name
         user_file = open(file_path, 'r', errors='ignore')
         pdfReader = PyPDF2.PdfFileReader(user_file)
         pageObj = pdfReader.getPage(0)
@@ -366,14 +366,14 @@ def summarize_document(file_name):
     summary = " ".join(str(x) for x in sentence_list)
 
 # save the data in another file, names sum.txt
-    f = open('/Users/warda/Dropbox/INTELLIGENT LEGAL ADVISOR FYP/intelligent_law/summary/sum.txt',
+    f = open('/Users/warda/Desktop/INTELLIGENT LEGAL ADVISOR FYP/intelligent_law/summary/sum.txt',
              'w', encoding='utf8')
 # print(type(f))
     f.write('\n')
     f.write(summary)
     f.close()
 
-    # f = open('/Users/warda/Dropbox/INTELLIGENT LEGAL ADVISOR FYP/intelligent_law/summary/sum.txt',
+    # f = open('/Users/warda/Desktop/INTELLIGENT LEGAL ADVISOR FYP/intelligent_law/summary/sum.txt',
     #          'r', encoding='utf8')
     # summary_text = f.read()
     # f.close()

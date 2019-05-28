@@ -13,9 +13,9 @@ from django.core.files.storage import FileSystemStorage
 # import all algorithms here
 import sys
 sys.path.append(
-    '/Users/warda/Dropbox/INTELLIGENT LEGAL ADVISOR FYP/intelligent_law/verdict_main')
+    '/Users/warda/Desktop/INTELLIGENT LEGAL ADVISOR FYP/intelligent_law/verdict_main')
 sys.path.append(
-    '/Users/warda/Dropbox/INTELLIGENT LEGAL ADVISOR FYP/intelligent_law/summary')
+    '/Users/warda/Desktop/INTELLIGENT LEGAL ADVISOR FYP/intelligent_law/summary')
 import main  # main.py from verdict_main module
 import summary_try
 

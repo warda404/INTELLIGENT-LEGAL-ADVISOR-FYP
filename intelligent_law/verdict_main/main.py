@@ -30,8 +30,8 @@ feature_threshold = DEFAULT_FEATURE_THRESHOLD
 classifiers = MULTILABEL_CLASSIFIERS
 # INPUT_PATH = 'data/input'
 # INPUT_PATH1 = 'data/input1'
-INPUT_PATH = '/Users/warda/Dropbox/INTELLIGENT LEGAL ADVISOR FYP/intelligent_law/verdict_main/data/input'
-INPUT_PATH1 = '/Users/warda/Dropbox/INTELLIGENT LEGAL ADVISOR FYP/intelligent_law/verdict_main/data/input1'
+INPUT_PATH = '/Users/warda/Desktop/INTELLIGENT LEGAL ADVISOR FYP/intelligent_law/verdict_main/data/input'
+INPUT_PATH1 = '/Users/warda/Desktop/INTELLIGENT LEGAL ADVISOR FYP/intelligent_law/verdict_main/data/input1'
 
 
 dataset1 = {
@@ -52,7 +52,7 @@ X1, y1, o1 = load_ECHR_instance(
 clf = DecisionTreeClassifier()
 clf.fit(X1, y1)
 
-with open('/Users/warda/Dropbox/INTELLIGENT LEGAL ADVISOR FYP/intelligent_law/verdict_main/cases_info_index.json') as json_file:
+with open('/Users/warda/Desktop/INTELLIGENT LEGAL ADVISOR FYP/intelligent_law/verdict_main/cases_info_index.json') as json_file:
     data = OrderedDict(json.load(json_file))
 
 
