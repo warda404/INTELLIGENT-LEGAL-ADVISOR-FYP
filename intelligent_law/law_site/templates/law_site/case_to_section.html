@@ -59,27 +59,45 @@
     </section>
 
 
+
+    <link rel="stylesheet" type="text/css" href="{% static "law_site/NEW/css/chatbot.css" %}">
+
     <section class="ftco-section contact-section">
       <div class="container">
-        <div class="row block-9">
-          <div class="col-lg-6 order-md-last d-flex">
-            <form action="#" class="bg-light p-5 contact-form">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name">
+      <div class="chat-container">
+        <div class="chat-module" onscroll="manageChatOverlay()">
+          <div class="thread">
+            <div class="thread-item">
+              <div class="avatar-container">
+                <div class="calliope appearing">
+                  <div class="head">
+                    <div class="eye-left"></div>
+                    <div class="eye-right"></div>
+                  </div>
+                  <div class="torso">
+                    <div class="arm-left"></div>
+                    <div class="arm-right"></div>
+                  </div>
+                  <div class="feet"></div>
+                </div>
               </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Email">
+              <div class="response-container">
+                <div class="reponse">
+                  Hello, tell me about your case!
+                </div>
               </div>
-              <div class="form-group">
-                <input type="password" class="form-control" placeholder="Password">
-              </div>
-              <div class="form-group">
-                <input type="submit" value="Sign Up" class="btn btn-primary py-3 px-5">
-              </div>
-            </form>
+            </div>
           </div>
         </div>
+        <div class="scroll-overlay overlay-hidden"></div>
+        <form method = "POST" class="form-prompt" onsubmit="event.preventDefault();sendInput();return false;">
+          <div class="user-prompt-indicator">
+            >
+          </div>
+          <input autofocus="1" class="user-prompt" data-role="user-input" type="text" id = "id-user-input" name = "user_message"/>
+        </form>
       </div>
+    </div>
     </section>
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
@@ -133,6 +151,9 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="{% static "law_site/js/google-map.js"%}"></script>
   <script src="{% static "law_site/js/main.js"%}"></script>
+
+
+  <script src="{% static "law_site/NEW/js/chatbot.js"%}"></script>
 
   </body>
 </html>

@@ -9,6 +9,7 @@ from django.http import HttpResponseRedirect
 from django.conf import settings
 from django.core.files.storage import FileSystemStorage
 
+from django.http import JsonResponse
 
 # import all algorithms here
 import sys
@@ -34,6 +35,15 @@ def document_similarity(request):
 
 def case_to_section(request):
     return render(request, 'law_site/case_to_section.html')
+
+
+def get_bot_answer(request):
+    user_message = request.GET.get('user_message', None)
+
+    data = {
+        'bot_answer': 'yo cookie bean :>'
+    }
+    return JsonResponse(data)
 
 
 def summarize(request):

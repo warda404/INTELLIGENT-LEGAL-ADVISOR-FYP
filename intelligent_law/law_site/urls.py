@@ -12,5 +12,6 @@ urlpatterns = [
     path('summarize/', views.summarize, name='law-summarize'),
     path('case_to_section/', views.case_to_section,
          name='law-case-to-section'),
-
+    path('ajax/get_bot_answer/',
+         views.get_bot_answer, name='get-bot-reply'),
 ]
