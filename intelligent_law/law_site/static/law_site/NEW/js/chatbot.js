@@ -23,7 +23,6 @@ function sendInput() {
         },
         dataType: 'json',
         success: function (data) {
-          // alert(data.bot_answer);
           var inputElt = document.querySelector('[data-role="user-input"]');
           if(inputElt.value == '')
             return;

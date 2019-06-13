@@ -607,6 +607,6 @@
   background: transparent;
 }
 .chat-module::-webkit-scrollbar-thumb {
-  background: hsl(310, 70%, 88%);
+  background: hsl(130, 70%, 88%);
   border-radius: 5px;
 }
