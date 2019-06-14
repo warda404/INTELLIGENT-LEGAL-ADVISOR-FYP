@@ -1,19 +1,12 @@
-var speechOn = false;
-
 function scrollModuleToBottom() {
   var chatModule = document.querySelector('.chat-module');
   chatModule.scrollTop = chatModule.scrollHeight;
 }
 
-function sendInput() {
-
-
-    // **************************
-    // $("#id-user-input").change(function () {
-    //   console.log( $(this).val() );
-    // });
+// function sendInput() {
 
     $("#id-user-input").change(function () {
+      console.log( $(this).val() );
       var user_message = $(this).val();
 
       $.ajax({
@@ -43,11 +36,8 @@ function sendInput() {
       });
 
     });
-    // **************************
 
-
-
-}
+// }
 
 function createThreadItem(isBot) {
     var thread = document.querySelector('.thread');
@@ -109,39 +99,16 @@ function createBotAvatar() {
 function showResponse(response) {
     var newThreadItem = createThreadItem(true);
     var responseItem = newThreadItem.querySelector('.response');
-    var charsCompleted = 0;
     scrollModuleToBottom();
 
-    setTimeout(function () {
-      // should I speak ?
-      if(speechOn && 'speechSynthesis' in window){
-          var speech = new SpeechSynthesisUtterance(response);
-          window.speechSynthesis.speak(speech);
-      }
-        var intervalID = setInterval(function () {
-            if (charsCompleted == response.length) {
-                toggleInput(true);
-                manageChatOverlay();
-                clearInterval(intervalID);
+    responseItem.innerHTML = response;
+    var calliope = newThreadItem.querySelector('.calliope.appearing');
+    calliope.classList.remove('appearing');
+    calliope.classList.add('idle');
 
-                setTimeout(function () {
-                    responseItem.innerHTML = response;
-                    var calliope = newThreadItem.querySelector('.calliope.appearing');
-                    calliope.classList.remove('appearing');
-                    calliope.classList.add('idle');
-                }, 1000);
-            }
-            else {
-                var char = document.createElement('span');
-                char.classList.add('char');
-                char.innerHTML = response.charAt(charsCompleted++);
-                if (char.innerHTML == ' ') {
-                    char.innerHTML = '&nbsp;';
-                }
-                responseItem.appendChild(char);
-            }
-        }, 5);
-    }, 300);
+    toggleInput(true);
+    manageChatOverlay();
+
 }
 
 function manageChatOverlay() {
@@ -161,6 +128,3 @@ function toggleInput(enabled) {
         inputElement.focus();
     }
 }
-
-
-//showResponse('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum cum asperiores sint repellendus debitis tenetur numquam, laboriosam quod perspiciatis, officiis alias officia. Deleniti sed error, necessitatibus et reprehenderit praesentium explicabo.');

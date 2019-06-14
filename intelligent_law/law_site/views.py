@@ -1,3 +1,6 @@
+# change absolute path according to your current working directory
+absolute_path = '/Users/warda/Desktop/INTELLIGENT LEGAL ADVISOR FYP/'
+
 from django.shortcuts import render
 from django.http import HttpResponse
 
@@ -14,11 +17,14 @@ from django.http import JsonResponse
 # import all algorithms here
 import sys
 sys.path.append(
-    '/Users/warda/Desktop/INTELLIGENT LEGAL ADVISOR FYP/intelligent_law/verdict_main')
+    absolute_path + 'intelligent_law/verdict_main')
 sys.path.append(
-    '/Users/warda/Desktop/INTELLIGENT LEGAL ADVISOR FYP/intelligent_law/summary')
-import main  # main.py from verdict_main module
-import summary_try
+    absolute_path + 'intelligent_law/summary')
+sys.path.append(absolute_path + 'intelligent_law/legal_advice')
+import main         # main.py from verdict_main module
+import summary_try  # summary_try.py from summary module
+import cosine       # cosine.py from  legal_advice module
+import soft_cosine  # soft_cosine.py from  legal_advice module
 
 
 def home(request):
@@ -39,9 +45,15 @@ def case_to_section(request):
 
 def get_bot_answer(request):
     user_message = request.GET.get('user_message', None)
+    print(user_message)
+    cosine_sections = cosine.get_cosine_sections(
+        absolute_path, user_message)
+    soft_cosine_sections = soft_cosine.get_soft_cosine_sections(
+        absolute_path, user_message)
 
+    bot_answer = cosine_sections + '</br></br>' + soft_cosine_sections
     data = {
-        'bot_answer': 'yo cookie bean :>'
+        'bot_answer': bot_answer
     }
     return JsonResponse(data)
 
