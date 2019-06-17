@@ -6,6 +6,8 @@ function scrollModuleToBottom() {
 // function sendInput() {
 
     $("#id-user-input").change(function () {
+      toggleInput(false);
+      
       console.log( $(this).val() );
       var user_message = $(this).val();
 
@@ -19,8 +21,6 @@ function scrollModuleToBottom() {
           var inputElt = document.querySelector('[data-role="user-input"]');
           if(inputElt.value == '')
             return;
-
-          toggleInput(false);
 
           var thread = document.querySelector('.thread');
           var newThreadItem = createThreadItem(false);

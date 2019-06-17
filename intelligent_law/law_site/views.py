@@ -48,10 +48,10 @@ def get_bot_answer(request):
     print(user_message)
     cosine_sections = cosine.get_cosine_sections(
         absolute_path, user_message)
-    soft_cosine_sections = soft_cosine.get_soft_cosine_sections(
-        absolute_path, user_message)
-
-    bot_answer = cosine_sections + '</br></br>' + soft_cosine_sections
+    bot_answer = cosine_sections
+    # soft_cosine_sections = soft_cosine.get_soft_cosine_sections(
+    # absolute_path, user_message)
+    # bot_answer = cosine_sections + '</br></br>' + soft_cosine_sections
     data = {
         'bot_answer': bot_answer
     }

@@ -7,7 +7,7 @@ from gensim.utils import simple_preprocess
 import numpy as np
 
 
-def create_soft_cossim_matrix(sentences, title, des):
+def create_soft_cossim_matrix(similarity_matrix, sentences, title, des):
     len_array = np.arange(len(sentences))
     xx, yy = np.meshgrid(0, len_array)
     cossim_mat = pd.DataFrame([[round(softcossim(
@@ -43,7 +43,8 @@ def get_soft_cosine_sections(absolute_path, query):
     p = pd.Series([dictionary.doc2bow(simple_preprocess(des[i]))
                    for i in range(0, len(des))])
 
-    valuesss = create_soft_cossim_matrix(p, title, des)
+    valuesss = create_soft_cossim_matrix(
+        similarity_matrix, p, title, des)
     x1 = valuesss[1:5]
     print(x1)
     soft_cosine_sections = ''
