@@ -75,7 +75,7 @@ def api_compare_2():
     print (vec2)
     print (vec1)
 
-    return jsonify(sim=gensim.matutils.cossim(vec1, vec2))
+    return jsonify(sim=100 * gensim.matutils.cossim(vec1, vec2))
 
 
 @app.route('/api/compare_all', methods=['POST'])
